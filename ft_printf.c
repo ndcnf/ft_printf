@@ -1,2 +1,21 @@
-#include <stdarg.h>
-int	ft_printf(const char *, ...)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/12 15:44:50 by nchennaf          #+#    #+#             */
+/*   Updated: 2021/11/12 18:18:02 by nchennaf         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ft_printf.h"
+
+int	ft_printf(const char *s, ...)
+{
+	va_list	args;
+
+	va_start(args, s);
+
+}
