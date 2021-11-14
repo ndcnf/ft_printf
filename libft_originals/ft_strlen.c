@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: nchennaf <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/12 15:41:22 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/12 18:16:50 by nchennaf         ###   ########.fr       */
+/*   Created: 2021/10/12 10:44:23 by nchennaf          #+#    #+#             */
+/*   Updated: 2021/11/05 10:46:12 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "../ft_printf.h"
 
-#include <stdarg.h>
-#include <stddef.h>
+size_t	ft_strlen(const char *str)
+{
+	int	i;
 
-int     ft_printf(const char *s, ...);
-size_t	ft_strlen(const char *str);
-
-#endif
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
