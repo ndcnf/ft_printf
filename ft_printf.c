@@ -6,7 +6,7 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:44:50 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/12 18:18:02 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/15 12:46:14 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,4 @@ int	ft_printf(const char *s, ...)
 	va_list	args;
 
 	va_start(args, s);
-	
-
 }

@@ -6,18 +6,18 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:41:22 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/15 11:27:46 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/15 12:46:52 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-#include <stdarg.h>
-#include <stddef.h>
-#include <stdlib.h>
+# include <stdarg.h>
+# include <stddef.h>
+# include <stdlib.h>
 
-int     ft_printf(const char *s, ...);
+int		ft_printf(const char *s, ...);
 size_t	ft_strlen(const char *str);
 
 #endif
