@@ -6,7 +6,7 @@
 #    By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 17:46:37 by nchennaf          #+#    #+#              #
-#    Updated: 2021/11/15 12:49:43 by nchennaf         ###   ########.fr        #
+#    Updated: 2021/11/16 16:50:10 by nchennaf         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,12 @@ CC = gcc
 CFLAGS = -Werror -Wall -Wextra
 NAME = libftprintf.a
 AR = ar rcs
-SRC = ft_printstr.c
+SRC =	ft_printstr.c \
+		ft_printf.c \
+		ft_putchar_fd.c \
+		ft_strlen.c \
+		ft_putstr_fd.c \
+		ft_putnbr_fd.c
 
 OBJ = ${SRC:.c=.o}
 

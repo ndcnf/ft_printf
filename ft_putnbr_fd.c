@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/12 15:41:22 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 16:49:19 by nchennaf         ###   ########.fr       */
+/*   Created: 2021/10/29 08:31:33 by nchennaf          #+#    #+#             */
+/*   Updated: 2021/11/16 16:50:50 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <stddef.h>
-# include <stdlib.h>
-# include <unistd.h>
-
-int		ft_printf(const char *s, ...);
-size_t	ft_strlen(const char *str);
-int		ft_putchar_fd(char c, int fd);
-int		ft_putstr_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
-
-#endif
+void	ft_putnbr_fd(int n, int fd)
+{
+	if (n == -2147483648)
+		write (fd, "-2147483648", 11);
+	else if (n >= 0 && n <= 9)
+		ft_putchar_fd(n + '0', fd);
+	else if (n >= 0)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n = -n;
+		ft_putnbr_fd(n, fd);
+	}
+}

@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nchennaf <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 08:30:55 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/02 16:53:16 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/16 14:36:35 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <unistd.h>
 
-void	ft_putchar_fd(char c, int fd)
+// writes the char and returns the count.
+
+int	ft_putchar_fd(char c, int fd)
 {
-	write (fd, &c, 1);
+	return (write (fd, &c, 1));
 }

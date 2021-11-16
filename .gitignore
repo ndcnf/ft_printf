@@ -1,8 +1,7 @@
 .DS_Store
 ft_printf.pdf
 printfTester-master/
-ft_printstr.c
 a.out
-ft_printstr.o
 *.o
 *.a
+.vscode/*
