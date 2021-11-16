@@ -6,18 +6,21 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 08:31:33 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 16:50:50 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/16 21:00:37 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-void	ft_putnbr_fd(int n, int fd)
+/*
+int	ft_putnbr_fd(int n, int fd)
 {
+	int	count;
+
+	count = 0;
 	if (n == -2147483648)
-		write (fd, "-2147483648", 11);
+		return (write (fd, "-2147483648", 11));
 	else if (n >= 0 && n <= 9)
-		ft_putchar_fd(n + '0', fd);
+		return (ft_putchar_fd(n + '0', fd));
 	else if (n >= 0)
 	{
 		ft_putnbr_fd(n / 10, fd);
@@ -29,4 +32,4 @@ void	ft_putnbr_fd(int n, int fd)
 		n = -n;
 		ft_putnbr_fd(n, fd);
 	}
-}
+}*/
