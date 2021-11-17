@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 08:31:33 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 21:00:37 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/17 13:44:08 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/*
+
 int	ft_putnbr_fd(int n, int fd)
 {
 	int	count;
@@ -20,7 +20,7 @@ int	ft_putnbr_fd(int n, int fd)
 	if (n == -2147483648)
 		return (write (fd, "-2147483648", 11));
 	else if (n >= 0 && n <= 9)
-		return (ft_putchar_fd(n + '0', fd));
+		return (ft_putchar_fd_int(n + '0', fd));
 	else if (n >= 0)
 	{
 		ft_putnbr_fd(n / 10, fd);
@@ -28,8 +28,9 @@ int	ft_putnbr_fd(int n, int fd)
 	}
 	else if (n < 0)
 	{
-		ft_putchar_fd('-', fd);
+		ft_putchar_fd_int('-', fd);
 		n = -n;
 		ft_putnbr_fd(n, fd);
 	}
-}*/
+	return (0);
+}

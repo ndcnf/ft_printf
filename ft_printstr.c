@@ -6,7 +6,7 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 11:09:54 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 14:32:18 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/17 13:43:15 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,15 @@ char	*ft_printstr(const char *s, ...)
 
 	if (!s)
 		return (NULL);
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	va_start(args, s);
 	i = 0;
+	str = (char *)s;
 while (s[i])
 	{
 		str[i] += (char)va_arg(args, int);
 		i++;
 	}
 	va_end(args);
-	str[i] = '\0';
 	return (str);
 }
 /*

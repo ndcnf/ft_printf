@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstr_fd_int.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 08:31:09 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 14:45:25 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/17 13:46:34 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	ft_putstr_fd_int(char *s, int fd)
 {
 	int	i;
 
@@ -21,7 +21,7 @@ int	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	while (s[i])
 	{
-		ft_putchar_fd(s[i], fd);
+		ft_putchar_fd_int(s[i], fd);
 		i++;
 	}
 	return (i);

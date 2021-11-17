@@ -6,7 +6,7 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:41:22 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 16:49:19 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/17 15:07:48 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 # include <unistd.h>
 
 int		ft_printf(const char *s, ...);
-size_t	ft_strlen(const char *str);
-int		ft_putchar_fd(char c, int fd);
-int		ft_putstr_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int		ft_putchar_fd_int(char c, int fd);
+int		ft_putstr_fd_int(char *s, int fd);
+int		ft_putnbr_fd(int n, int fd);
+int		the_counter(int n);
 
 #endif

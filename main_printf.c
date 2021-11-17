@@ -6,12 +6,12 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 14:32:42 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/16 21:16:44 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/17 14:24:10 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
+#include <stdio.h>
 int main(void)
 {
 	char	*str0;
@@ -20,6 +20,8 @@ int main(void)
 	char	*str3;
 	int		is_trap;
 	char	c1;
+	int		i = 0;
+	int		j = 0;
 
     str0 = "123456789";
     str1 = "le chien danse dans le sable";
@@ -28,10 +30,16 @@ int main(void)
     c1 = 'P';
     is_trap = 1764;
 
-    ft_printf("str0 : %s\nstr2 : %s\nstr3 : %s\nc1 : %c, reellement ?\nd : %d\n\n", str0, str2, str3, c1, is_trap);
-    ft_printf("Merci c : %c et un avion\n", c1);
-	ft_printf(" %c\n", '0' - 256);
-	ft_printf("decimal : %d et une echelle\n\n", is_trap);
+    //ft_printf("str0 : %s\nstr2 : %s\nstr3 : %s\nc1 : %c, reellement ?\nd : %d\n\n", str0, str2, str3, c1, is_trap);
+    //ft_printf("Merci c : %c et un avion\n", c1);
+
+	i = ft_printf(" %d ", -1);
+	ft_printf("MON RETOUR [%d]\n", i);
+
+	j = printf(" %d ", -1);
+	printf("SON RETOUR [%d]\n", j);
+
+	//ft_printf("decimal : %d et une echelle\n\n", is_trap);
 
 	return (0);
 }
