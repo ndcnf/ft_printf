@@ -13,4 +13,5 @@
 // Define the behaviour depending on the incoming char.
 
 // Le festival de l'elseif qui renvoie partout
-# include "ft_printf.h"
+/*# include "ft_printf.h"
+*/

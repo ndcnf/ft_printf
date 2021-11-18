@@ -1,6 +1,7 @@
 .DS_Store
 ft_printf.pdf
 printfTester-master/
+printfTester/
 printf-unit-test/
 a.out
 *.o

@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-size_t	ft_putnbr_fd_sizet(int n, int fd)
+size_t	ft_putunbr_fd(unsigned int n, int fd)
 {
 	size_t	count;
 

@@ -33,10 +33,16 @@ int main(void)
     //ft_printf("str0 : %s\nstr2 : %s\nstr3 : %s\nc1 : %c, reellement ?\nd : %d\n\n", str0, str2, str3, c1, is_trap);
     //ft_printf("Merci c : %c et un avion\n", c1);
 
-	i = ft_printf(" %d ", -1);
+	i = ft_printf(" %d hola", -9);
 	ft_printf("MON RETOUR [%d]\n", i);
 
-	j = printf(" %d ", -1);
+	j = printf(" %d hola", -9);
+	printf("SON RETOUR [%d]\n", j);
+
+	i = ft_printf(" %x hola", 432);
+	ft_printf("MON RETOUR [%d]\n", i);
+
+	j = printf(" %x hola", 432);
 	printf("SON RETOUR [%d]\n", j);
 
 	//ft_printf("decimal : %d et une echelle\n\n", is_trap);

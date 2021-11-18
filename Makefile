@@ -14,12 +14,12 @@ CC = gcc
 CFLAGS = -Werror -Wall -Wextra
 NAME = libftprintf.a
 AR = ar rcs
-SRC =	ft_printstr.c \
-		ft_printf.c \
+SRC =	ft_printf.c \
 		ft_putchar_fd_int.c \
 		ft_putstr_fd_int.c \
 		ft_putnbr_fd.c \
 		ft_counter.c \
+		ft_base_conv.c \
 		#ft_choice.c
 
 OBJ = ${SRC:.c=.o}
