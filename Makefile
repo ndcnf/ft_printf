@@ -6,7 +6,7 @@
 #    By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 17:46:37 by nchennaf          #+#    #+#              #
-#    Updated: 2021/11/17 14:06:28 by nchennaf         ###   ########.fr        #
+#    Updated: 2021/11/19 14:33:11 by nchennaf         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRC =	ft_printf.c \
 		ft_putnbr_fd.c \
 		ft_counter.c \
 		ft_base_conv.c \
+		ft_putunbr_fd.c \
 		#ft_choice.c
 
 OBJ = ${SRC:.c=.o}

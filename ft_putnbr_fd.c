@@ -31,7 +31,6 @@ size_t	ft_putnbr_fd_sizet(int n, int fd)
 	{
 		count = ft_putnbr_fd_sizet(n / 10, fd);
 		ft_putchar_fd_int((n % 10) + '0', fd);
-		//ft_putnbr_fd(n % 10, fd);
 		return (count + 1);
 	}
 	else if (n < 0)
