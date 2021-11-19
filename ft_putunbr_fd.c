@@ -17,7 +17,7 @@ size_t	ft_putunbr_fd(unsigned int n, int fd)
 	size_t	count;
 
 	count = 0;
-	if (n == -2147483648)
+	if (n < 0)
 	{
 		write (fd, "-2147483648", 11);
 		return (11);
@@ -36,9 +36,6 @@ size_t	ft_putunbr_fd(unsigned int n, int fd)
 	}
 	else if (n < 0)
 	{
-		ft_putchar_fd_int('-', fd);
-		n = -n;
-		count++;
 		ft_putnbr_fd_sizet(n, fd);
 	}
 	return (0);

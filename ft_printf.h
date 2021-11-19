@@ -22,6 +22,7 @@ int		ft_printf(const char *s, ...);
 int		ft_putchar_fd_int(char c, int fd);
 int		ft_putstr_fd_int(char *s, int fd);
 size_t	ft_putnbr_fd_sizet(int n, int fd);
+size_t	ft_putunbr_fd(unsigned int n, int fd);
 int		the_counter(int n);
 int     ft_base_conv(unsigned int n, unsigned int base, char c, int fd);
 

@@ -33,10 +33,10 @@ int main(void)
     //ft_printf("str0 : %s\nstr2 : %s\nstr3 : %s\nc1 : %c, reellement ?\nd : %d\n\n", str0, str2, str3, c1, is_trap);
     //ft_printf("Merci c : %c et un avion\n", c1);
 
-	i = ft_printf(" %d hola", -9);
+	i = ft_printf(" %u ", -1);
 	ft_printf("MON RETOUR [%d]\n", i);
 
-	j = printf(" %d hola", -9);
+	j = printf(" %u ", -1);
 	printf("SON RETOUR [%d]\n", j);
 
 	i = ft_printf(" %x hola", 432);

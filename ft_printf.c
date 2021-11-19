@@ -33,21 +33,26 @@ int	ft_printf(const char *s, ...)
 		{
 			i++;
 			if (s[i] == 's')
-				nbr += ft_putstr_fd_int((char *)va_arg(args, char *), 1);
+				nbr += ft_putstr_fd_int(va_arg(args, char *), 1);
 			else if (s[i] == 'c')
 				nbr += ft_putchar_fd_int((char)va_arg(args, int), 1);
 			else if (s[i] == 'd' || s[i] == 'i')
 			{
 				//nbr = the_counter(ft_atoi((char *)va_arg(args, char *)));
-				nbr += ft_putnbr_fd_sizet((int)va_arg(args, int), 1);
+				nbr += ft_putnbr_fd_sizet(va_arg(args, int), 1);
 			}
 			else if (s[i] == '%')
 				nbr += ft_putchar_fd_int('%', 1);
 			else if (s[i] == 'x' || s[i] == 'X')
-				nbr += ft_base_conv((unsigned int)va_arg(args, unsigned int), 16, s[i], 1);
+				nbr += ft_base_conv(va_arg(args, unsigned int), 16, s[i], 1);
 			else if (s[i] == 'p')
 			{
-				nbr += ft_base_conv((unsigned int)va_arg(args, void *), 16, 'x', 1);
+				nbr += ft_putstr_fd_int("0x", 1);
+				nbr += ft_base_conv((unsigned long)va_arg(args, void *), 16, 'x', 1);
+			}
+			else if (s[i] == 'u')
+			{
+				nbr += ft_putunbr_fd(va_arg(args, unsigned int), 1);
 			}
 			else
 			{
