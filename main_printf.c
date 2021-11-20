@@ -6,7 +6,7 @@
 /*   By: nchennaf <nchennaf@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 14:32:42 by nchennaf          #+#    #+#             */
-/*   Updated: 2021/11/19 19:55:55 by nchennaf         ###   ########.fr       */
+/*   Updated: 2021/11/20 18:00:23 by nchennaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ int main(void)
     //ft_printf("str0 : %s\nstr2 : %s\nstr3 : %s\nc1 : %c, reellement ?\nd : %d\n\n", str0, str2, str3, c1, is_trap);
     //ft_printf("Merci c : %c et un avion\n", c1);
 
-	i = ft_printf(" %c ", -1);
+	i = ft_printf(" %f ", 1.2);
 	ft_printf("MON RETOUR [%d]\n", i);
 
-	j = printf(" %c ", -1);
+	j = printf(" %f ", 1.2);
 	printf("SON RETOUR [%d]\n", j);
 
 	i = ft_printf(" %x hola", 432);
