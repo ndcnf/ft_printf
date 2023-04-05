@@ -2,14 +2,9 @@
 To recreate the `printf()` function in C.
 
 ![Restrictions][restrictions]</br>
-Only these functions were allowed:
-* malloc
-* free
-* write
-* va_start
-* va_arg
-* va_copy
-* va_end
+Only these functions were allowed:</br>
+`malloc()`, `free()`, `write()`</br>
+`va_start()`, `va_arg()`, `va_copy()`, `va_end()`
 
 ![Purposes][purposes]</br>
 Learn about variadic functions.</br>
